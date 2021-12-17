@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "GitSearch";
+}
+
+<div class="text-center">
+    <h1 class="display-4">GitSearch - найдётся всё!</h1>
+    <h4>Сервис поиска проектов на GitHub</h4>
+    <div class="mb-3">
+        <form method="post">
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="search" class="form-control" value="@Model.Search" />
+                </div>
+
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Поиск</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    @if (Model.Search != null)
+    {
+        if (Model.Repos.Count > 0)
+        {
+            <div class="row">
+                @foreach (var repo in Model.Repos)
+                {
+                    <div class="col-sm-3">
+                        <div class="card mb-3">
+                            <div class="card-header text-white bg-dark">
+                                @repo.Name
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Автор: @repo.Author</p>
+                                <p class="card-text">Звезд: @repo.Stargazers</p>
+                                <p class="card-text">Просмотров: @repo.Watchers</p>
+                                <a href="@repo.Url" class="btn btn-primary" target="_blank">Перейти</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="text-center">
+                <p class="text">Ничего не найдено. Попробуйте ещё!</p>
+            </div>
+
+        }
+    }
+</div>
