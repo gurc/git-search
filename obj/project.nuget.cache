@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MfL0gBvi00CU4AZ2Dsma3sRKjVUW/AEYfkTh8yeXE+K69uCAhg8ptdoHjVsdpqUVhS/KIeLnl6IYmlNUsc7AIA==",
+  "dgSpecHash": "D8vw6o6W3aWxxzR+oUPiwElRFyl+E/4sO08vuEcM89e9zh28F+5C9hmhVGrA/tieuVvpBbVogLjTisGb0M37Kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gurcmikhail\\source\\repos\\GitSearch\\GitSearch.csproj",
+  "projectFilePath": "C:\\Users\\gurcmikhail\\Source\\Repos\\git-search\\GitSearch.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gurcmikhail\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\gurcmikhail\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

@@ -11,7 +11,7 @@ namespace GitSearch.Utils
     public static class Utils
     {
         private static readonly HttpClient client = new HttpClient();
-        private static string token = "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";
+        private static string token = "";
         private static readonly ApplicationContext _context;
 
         static Utils()
