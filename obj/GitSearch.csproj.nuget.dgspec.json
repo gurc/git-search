@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gurcmikhail\\Source\\Repos\\git-search\\GitSearch.csproj": {}
+    "C:\\Users\\gurcmikhail\\source\\repos\\git-search\\GitSearch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gurcmikhail\\Source\\Repos\\git-search\\GitSearch.csproj": {
+    "C:\\Users\\gurcmikhail\\source\\repos\\git-search\\GitSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gurcmikhail\\Source\\Repos\\git-search\\GitSearch.csproj",
+        "projectUniqueName": "C:\\Users\\gurcmikhail\\source\\repos\\git-search\\GitSearch.csproj",
         "projectName": "GitSearch",
-        "projectPath": "C:\\Users\\gurcmikhail\\Source\\Repos\\git-search\\GitSearch.csproj",
+        "projectPath": "C:\\Users\\gurcmikhail\\source\\repos\\git-search\\GitSearch.csproj",
         "packagesPath": "C:\\Users\\gurcmikhail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gurcmikhail\\Source\\Repos\\git-search\\obj\\",
+        "outputPath": "C:\\Users\\gurcmikhail\\source\\repos\\git-search\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gurcmikhail\\AppData\\Roaming\\NuGet\\NuGet.Config",

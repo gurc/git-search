@@ -1,14 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using System.Net.Http;
-using System.Net;
 using GitSearch.Model;
-using GitSearch.Utils;
+using GitSearch.Services;
 
 namespace GitSearch.Pages
 {
@@ -19,11 +15,12 @@ namespace GitSearch.Pages
 
         public string Search;
         public List<Repo> Repos;
+        IFinder _finder;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger, IFinder finder)
         {
             _logger = logger;
-
+            _finder = finder;
         }
 
         public void OnGet()
@@ -35,7 +32,7 @@ namespace GitSearch.Pages
         {
             Search = search;
 
-            Repos = await Utils.Utils.Find(search);
+            Repos = await _finder.Find(search);
             
             return Page();
         }
