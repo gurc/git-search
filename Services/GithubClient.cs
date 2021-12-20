@@ -23,7 +23,7 @@ namespace GitSearch.Services
 
         public async Task<HttpResponseMessage> GetAsync(string subject)
         {
-            if (_token == null)
+            if (_token == null | _token == "")
             {
                 throw new Exception("Не задан токен для доступа к Github");
             }

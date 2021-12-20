@@ -4,3 +4,5 @@
 
 /DataBase.db
 bin
+obj
+token.json
